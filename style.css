@@ -693,20 +693,40 @@ body {
     height: 280px;
   }
 
+  /* About Cards - Center on Mobile */
   .about-cards {
     grid-template-columns: 1fr;
   }
 
+  .about-card {
+    text-align: center;
+  }
+
+  .card-icon {
+    display: block;
+    text-align: center;
+  }
+
+  .skills-tags {
+    justify-content: center;
+  }
+
+  /* Timeline - Card Layout on Mobile */
   .timeline::before {
-    left: 10px;
+    display: none;
   }
 
   .timeline-item {
-    padding-left: 50px;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
   }
 
   .timeline-marker {
-    left: 0;
+    display: none;
+  }
+
+  .timeline-content {
+    box-shadow: var(--shadow);
   }
 
   .projects-grid {
